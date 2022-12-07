@@ -1,0 +1,1 @@
+# rapid-static-yesnotno
