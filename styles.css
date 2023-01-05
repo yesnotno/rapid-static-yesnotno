@@ -100,11 +100,10 @@ video {
 }
 
 .content {
-    height: 90%;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     text-align: center;
     padding-bottom: .5em;
 }
@@ -115,20 +114,56 @@ video {
     }
 }
 
+
+.hori-logo {
+    display: flex;
+}
+.hori-title {
+    padding-bottom: 3%;
+}
+@media screen and (max-width: 1250px) {
+    .hori-title {
+        padding-bottom: 1%;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .hori-logo {
         display: none;
     }
+
+    .hori-title {
+        display: none;
+    }
+}
+
+.mobile-header {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .mobile-header {
+        display: block;
+    }
+}
+
+.vert-title-cont {
+    float: left;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+    .vert-title-cont {
+        width: 70%;
+    }
 }
 
 .vert-logo {
-    position: relative;
-    margin-left: auto;
-    max-height: 100vh;
-    max-width: 100px;
-    /* align-self: flex-end; */
-    /* padding-right: 10px; */
-    padding-bottom: 20px;
+    float: right;
+    max-width: 70px;
 }
 
 @media screen and (min-width: 750px) {
@@ -139,19 +174,19 @@ video {
 
 .links {
     display: flex;
-    height: 50%;
     width: 90%;
     margin: auto;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
     text-align: left;
-    padding-top: 2.5vw;
 }
 
 @media screen and (max-width: 750px) {
     .links {
         flex-direction: column;
         margin: unset;
+        gap: 0;
         padding-top: 0;
     }
 }
