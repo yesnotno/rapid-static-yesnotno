@@ -9,11 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@900&display=swap" rel="stylesheet">
+    <script>
+        console.log("what")
+        document.getElementById('vid').play();
+    </script>
   </head>
   <body>
     <main id="main">
-        <video autoplay="autoplay" muted="muted" playsinline="playsinline" loop="loop">
-          <source src="./assets/dive-git.mp4" type="video/mp4"/>
+        <video id='vid' autoplay="true" muted="true" playsinline="true" loop="true">
+          <source  src="./assets/dive-git.mp4" type="video/mp4"/>
         </video>
         <div class="container">
           <div class="content">
